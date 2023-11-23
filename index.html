@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            color: antiquewhite;
+        }
+
+        body {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(103, 9, 121, 0.9052871148459384) 43%, rgba(123, 0, 255, 1) 100%);
+
+        }
+       #birthday-message{
+        color:rgb(216, 167, 229);
+       }
+p{
+    color:rgb(224, 165, 239);
+}
+        .audio-container {
+            display: none; 
+        }
+        video::-webkit-media-controls {
+            display: none !important;
+          
+        }
+
+        video {
+            outline: none;
+           
+        }
+
+        div.gallery {
+            margin: 20px;
+            float: left;
+            width: 300px;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.gallery2 {
+            margin: 30px;
+            float: left;
+            width: 300px;
+        }
+
+
+
+        div.gallery2 img {
+            width: 100%;
+            height: auto;
+
+        }
+
+     
+
+        .gallery2 {
+            perspective: 1000px;
+            margin: 50px;
+        }
+
+        .gallery2 a {
+            display: block;
+            transform-style: preserve-3d;
+          
+        }
+
+        .gallery2 a:nth-child(odd) {
+            animation: rotateAnimationOdd 10s infinite linear;
+        
+        }
+
+        .gallery2 a:nth-child(even) {
+            animation: rotateAnimationEven 15s infinite linear;
+           
+        }
+
+        @keyframes rotateAnimationOdd {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            25% {
+                transform: rotateY(20deg);
+                
+            }
+
+            50% {
+                transform: rotateY(0deg);
+            }
+
+            75% {
+                transform: rotateY(-20deg);
+              
+            }
+
+            100% {
+                transform: rotateY(0deg);
+            }
+        }
+
+        @keyframes rotateAnimationEven {
+            0% {
+                transform: rotateX(0deg);
+            }
+
+            25% {
+                transform: rotateX(20deg);
+               
+            }
+
+            50% {
+                transform: rotateX(0deg);
+            }
+
+            75% {
+                transform: rotateX(-20deg);
+                
+            }
+
+            100% {
+                transform: rotateX(0deg);
+            }
+        }
+    
+.video-container {
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    width: 550px;
+    height: 300px;
+}
+#card{
+    text-decoration: none;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="audio-container">
+        <audio autoplay controls>
+            <source src="song.mp3" type="audio/mp3">       
+        </audio>
+        
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="b.jpg">
+            <img src="b.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Tu jo rootha toh kaun hansega
+            Tu jo chhoota toh kaun rahega</p>
+    </div>
+    <div id="msg">
+        <h1 id="birthday-message" align="center"></h1>
+    </div>
+
+    <div class="gallery2">
+        <a target="_blank" href="e.jpg">
+            <img src="e.jpg" alt="Cinque Terre" width="600" height="400">
+          
+        </a>
+        <p>Tu chup hai toh yeh darr lagta hai
+            Apna mujhko ko ab kaun kahega</p>
+    </div>
+    <div class="gallery2">
+        <a target="_blank" href="h.png">
+            <img src="h.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Tu hi wajah…
+            Tere bina bewajah bekar hoon main</p>
+    </div>
+    <div class="gallery2">
+        <a target="_blank" href="e.jpg">
+            <img src="e.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Tera yaar hoon main
+            Tera yaar hoon main</p>
+    </div>
+
+    <div class="gallery2">
+        <a target="_blank" href="g.jpg">
+            <img src="g.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Aaja ladein phir khilono ke liye
+            Tu jeete main haar jaaun
+            Aaja karein phir wohi shararatein
+            Tu bhaage main maar khaaun
+            Meethi si woh gaali teri
+            Sun’ne ko taiyaar hoon main</p>
+    </div>
+
+    <div class="gallery2">
+        <a target="_blank" href="f.jpg">
+            <img src="f.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Tera yaar hoon main
+            Tera yaar hoon main
+            Tera yaar hoon…</p>
+    </div>
+    <div>
+
+<div class="video-container">
+        <video  autoplay loop muted controls>
+            <source src="aa.mp4" type="video/mp4">
+       
+        </video>
+    </div>
+
+
+    <div class="gallery2">
+        <a target="_blank" href="i.jpg">
+            <img src="i.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Sajna de rang rangaaiyan ve
+            Shagna diyan sehnaiyan ve
+            Dhol wajange yaar nachange
+            Lakh lakh deo badhaiyan ve
+            Khusiyan ‘ch nachda main phiraan
+            Hanjuan ton bachda main phiraan…</p>
+    </div>
+
+    <div class="gallery2">
+        <a target="_blank" href="c.jpg">
+            <img src="c.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>O jaate nahi kahin rishte puraane
+            Kisi naye ke aa jaane se
+            Jaata hoon main toh mujhe tu jaane de
+            Kyun pareshan hai mere jaane se…</p>
+    </div>
+    <div class="gallery2">
+        <a target="_blank" href="a.jpg">
+            <img src="a.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Toota hai toh juda hai kyun
+            Meri taraf tu muda hai kyun
+            Haq nahi tu yeh kahe ki yaar ab hum na rahe
+            Ek teri yaari ka hi
+            Saaton janam haqdaar hoon main</p>
+    </div>
+    <div class="gallery2">
+        <a target="_blank" href="d.jpg">
+            <img src="d.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Tera yaar hoon main…</p>
+    </div>
+    <div class="gallery2">
+        <a target="_blank" href="bb.jpg">
+            <img src="bb.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Tera yaar hoon main…</p>
+    </div>
+    <div class="gallery2">
+        <a target="_blank" href="ee.jpg">
+            <img src="ee.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Tera yaar hoon main…</p>
+    </div>
+    <div class="gallery2">
+        <a target="_blank" href="ff.png">
+            <img src="ff.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Tera yaar hoon main…</p>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="gg.jpg">
+            <img src="gg.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Tera yaar hoon main…</p>
+    </div>
+    <a href="card.html" id="card">Click ME Plzzzz</a>
+   
+    <script>
+
+        function typeWriter(text, index, element) {
+            if (index < text.length) {
+                document.getElementById(element).innerHTML += text.charAt(index);
+                index++;
+                setTimeout(function () {
+                    typeWriter(text, index, element);
+                }, 100);
+            }
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var message = "Happy Birthday Piyush Mere Bhai ";
+            typeWriter(message, 0, "birthday-message");
+        });
+        document.getElementById("myVideo").addEventListener("playing", function () {
+            this.controls = false;
+        });
+    </script>
+</body>
+
+</html>
